@@ -1,9 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Test StudyBuddy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudyBuddy | Free SSC Notes & Papers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <h1>Hello, StudyBuddy!</h1>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" autoplay loop>
+    <source src="music/ambient.mp3" type="audio/mpeg">
+  </audio>
+  <button id="musicToggle" title="Toggle Music">🔈</button>
+
+  <!-- Mascot Buddy -->
+  <div id="buddyMascot">
+    <img src="images/buddy.png" alt="Buddy the Mascot" />
+  </div>
+
+  <!-- Buddy Modal -->
+  <div id="buddyModal" class="modal hidden">
+    <div class="modal-box">
+      <h3>👋 Hello! I’m Buddy</h3>
+      <p>I can help you navigate the website:</p>
+      <ul>
+        <li>📘 Click a class to view notes & papers</li>
+        <li>🧠 Use the search bar (coming soon)</li>
+        <li>🔍 Ask me if you’re stuck!</li>
+      </ul>
+      <button id="closeModal">Got it!</button>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>📚 StudyBuddy</h1>
+    <p>Free Notes & Previous Year Papers for Maharashtra SSC (1st to 10th)</p>
+  </header>
+
+  <!-- Class Cards -->
+  <section class="classes">
+    <!-- Generate 10 classes -->
+    <div class="class-card" onclick="openClass(1)">
+    <h2>Class 1</h2><p>Notes & Papers</p>
+  </div>
+  <div class="class-card" onclick="openClass(2)">
+    <h2>Class 2</h2><p>Notes & Papers</p>
+  </div>
+  <div class="class-card" onclick="openClass(3)">
+    <h2>Class 3</h2><p>Notes & Papers</p>
+  </div>
+  <div class="class-card" onclick="openClass(4)">
+    <h2>Class 4</h2><p>Notes & Papers</p>
+  </div>
+  <div class="class-card" onclick="openClass(5)">
+    <h2>Class 5</h2><p>Notes & Papers</p>
+  </div>
+  <div class="class-card" onclick="openClass(6)">
+    <h2>Class 6</h2><p>Notes & Papers</p>
+  </div>
+  <div class="class-card" onclick="openClass(7)">
+    <h2>Class 7</h2><p>Notes & Papers</p>
+  </div>
+  <div class="class-card" onclick="openClass(8)">
+    <h2>Class 8</h2><p>Notes & Papers</p>
+  </div>
+  <div class="class-card" onclick="openClass(9)">
+    <h2>Class 9</h2><p>Notes & Papers</p>
+  </div>
+  <div class="class-card" onclick="openClass(10)">
+    <h2>Class 10</h2><p>Notes & Papers</p>
+  </div>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ for students by StudyBuddy • © 2025</p>
+  </footer>
 </body>
 </html>
